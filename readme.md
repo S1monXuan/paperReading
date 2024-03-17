@@ -5,7 +5,7 @@ As part of personal practice, the papers I read may cover different fields, but 
 
 ## Deep Learning
 
-Note for those breakthrough model and technology.
+Note for those breakthrough model and technology. Folder `ModelRealize` stores all the code for models I have successfully replicated from papers.
 
 ### CNN
 
