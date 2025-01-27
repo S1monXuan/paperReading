@@ -128,16 +128,17 @@ if __name__ == '__main__':
 
     # Training data
 
-    # criterion = nn.CrossEntropyLoss()
-    # optimizer = optim.Adam(model.parameters(), lr=0.001)
-    # print('Training Data')
-    # # Train model using train_loader
-    # model = train_model(train_loader, model, criterion, optimizer, device, 10)
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(model.parameters(), lr=0.001)
+    print('Training Data')
+    # Train model using train_loader
+    model = train_model(train_loader, model, criterion, optimizer, device, 10)
 
     # Load Trained Data
     print('Load Trained data')
     model = torch.load('Self_AlexNet.pth')
     if(torch.cuda.is_available()):
+        print("CUDA AVAILABLE")
         model.to(device)
 
     print('Predict Train dataset')
